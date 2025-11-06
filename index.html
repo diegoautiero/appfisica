@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mia Simulazione 3D (PyScript)</title>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.7.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.7.1/core.js"></script>
+</head>
+<body style="margin:0;background:#0f172a;color:#e5e7eb;">
+  <h1>Simulazione in PyScript</h1>
+
+  <!-- Esegui un file .py esterno -->
+  <py-config>
+    packages = ["numpy", "matplotlib"]      # aggiungi qui i pacchetti supportati
+  </py-config>
+
+  <py-script src="sim.py"></py-script>
+
+  <!-- esempio: un contenitore dove il tuo Python può scrivere -->
+  <div id="out"></div>
+</body>
+</html>
